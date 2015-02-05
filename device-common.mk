@@ -101,13 +101,12 @@ PRODUCT_PACKAGES += \
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
+    fsck.f2fs \
+    mkfs.f2fs \
     e2fsck \
     setup_fs
 
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
-
-# we have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
 
 # media config xml file
 PRODUCT_COPY_FILES += \
