@@ -35,16 +35,6 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.grouper
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/grouper
 
-# Compiler flags
-ENABLE_GCCONLY := true
-GRAPHITE_OPTS := true
-STRICT_ALIASING := true
-SUPPRES_UNUSED_WARNING := true
-TARGET_GCC_VERSION_EXP := 4.8
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9
-TARGET_USE_PIPE := true
-USE_O3_OPTIMIZATIONS := true
-
 -include vendor/asus/grouper/BoardConfigVendor.mk
 include device/asus/grouper/BoardConfigCommon.mk
 
